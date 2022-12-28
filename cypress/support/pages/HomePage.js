@@ -24,3 +24,5 @@ class HomePage{
         return this.rightClickSliderBtn().click();
     }
 }
+
+export default HomePage;
