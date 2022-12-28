@@ -17,10 +17,10 @@ class HomePage{
     thirdSliderImg() {
         return cy.get(pageLocators.thirdSliderImg);
     }
-    leftClickSliderBtn() {
-        return cy.get(pageLocators.leftClickSliderBtn);
+    clickLeftSliderBtn() {
+        return this.leftClickSliderBtn().click();
     }
-    rightClickSliderBtn() {
-        return cy.get(pageLocators.rightClickSliderBtn);
+    clickrightSliderBtn() {
+        return this.rightClickSliderBtn().click();
     }
 }
