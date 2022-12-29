@@ -3,7 +3,8 @@ const pageLocators = {
     secondSliderImg: '[src="nexus.jpg"]',
     thirdSliderImg: '[src="iphone1.jpg"]',
     leftClickSliderBtn: '.carousel-control-prev',
-    rightClickSliderBtn: '.carousel-control-next'
+    rightClickSliderBtn: '.carousel-control-next',
+    carouselIndicators: '.carousel-indicators'
 
 }
 

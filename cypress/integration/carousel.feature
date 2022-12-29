@@ -3,7 +3,17 @@ Feature: Manage Carousel functionalities
     As a User
     I want to test that the carousel works correctly
 
-    Scenario: Scrolling to both sides
+    Background:
         Given I visit the homepage
-        When I click on the next or previous button
-        Then I should be able to see the different carousel images
+
+    Scenario: Scrolling to the left side
+        When I click on the previous button
+        Then I should be able to see the image at the left of the carousel
+
+    Scenario: Scrolling to the right side
+        When I click on the next button
+        Then I should be able to see the image at the left of the carousel
+    
+    Scenario: Carousel indicators
+        When I click on any of the indicators
+        Then I should see the image that correspond the option
