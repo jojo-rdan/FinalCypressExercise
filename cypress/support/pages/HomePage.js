@@ -1,6 +1,6 @@
 const pageLocators = {
     firstSliderImg: '[src="Samsung1.jpg"]',
-    secondSliderImg: '[src="nexus.jpg"]',
+    secondSliderImg: '[src="nexus1.jpg"]',
     thirdSliderImg: '[src="iphone1.jpg"]',
     leftClickSliderBtn: '.carousel-control-prev',
     rightClickSliderBtn: '.carousel-control-next',
@@ -16,7 +16,7 @@ class HomePage{
         return cy.get(pageLocators.secondSliderImg);
     }
     thirdSliderImg() {
-        return cy.get(pageLocators.thirdSliderImg);
+        return cy.get(pageLocators.thirdSliderImg).invoke();
     }
     clickLeftSliderBtn() {
         return this.leftClickSliderBtn().click();

@@ -12,7 +12,7 @@ Feature: Manage Carousel functionalities
 
     Scenario: Scrolling to the right side
         When I click on the next button
-        Then I should be able to see the image at the left of the carousel
+        Then I should be able to see the image at the right of the carousel
     
     Scenario: Carousel indicators
         When I click on any of the indicators
