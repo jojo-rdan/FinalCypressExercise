@@ -9,6 +9,13 @@ const pageLocators = {
 }
 
 class HomePage{
+
+    leftClickArrow() {
+        return cy.get(pageLocators.leftClickSliderBtn);
+    }
+    rightClickArrow() {
+        return cy.get(pageLocators.rightClickSliderBtn);
+    }
     firstSliderImg() {
         return cy.get(pageLocators.firstSliderImg);
     }
@@ -16,13 +23,13 @@ class HomePage{
         return cy.get(pageLocators.secondSliderImg);
     }
     thirdSliderImg() {
-        return cy.get(pageLocators.thirdSliderImg).invoke();
+        return cy.get(pageLocators.thirdSliderImg);
     }
     clickLeftSliderBtn() {
-        return this.leftClickSliderBtn().click();
+        return this.leftClickArrow().click();
     }
     clickrightSliderBtn() {
-        return this.rightClickSliderBtn().click();
+        return this.rightClickArrow().click();
     }
 }
 

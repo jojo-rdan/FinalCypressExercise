@@ -3,13 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {
-        "cypress:runner": "cypress open",
-        "cypress:execuion": "cypress run"
-    },
-    "keywords": [
-        "cypress"
-    ],
+    "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
