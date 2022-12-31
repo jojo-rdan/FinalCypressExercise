@@ -4,7 +4,7 @@ const pageLocators = {
     thirdSliderImg: '[src="iphone1.jpg"]',
     leftClickSliderBtn: '.carousel-control-prev',
     rightClickSliderBtn: '.carousel-control-next',
-    carouselIndicators: '.carousel-indicators'
+    carouselIndicators: '.carousel-indicators li'
 
 }
 
@@ -16,20 +16,33 @@ class HomePage{
     rightClickArrow() {
         return cy.get(pageLocators.rightClickSliderBtn);
     }
+    firstIndicatorOption() {
+        return cy.get(pageLocators.carouselIndicators[0]);
+    }
+    allCarouselIndicators() {
+        return cy.get(pageLocators.carouselIndicators);
+    }
+
+    firstIndicatorOptionActive() {
+        return cy.get(pageLocators.carouselIndicators[0]).invoke('attr', 'class');
+    }
     firstSliderImg() {
-        return cy.get(pageLocators.firstSliderImg);
+        return cy.get(pageLocators.firstSliderImg).invoke('attr', 'src');
     }
     secondSliderImg() {
-        return cy.get(pageLocators.secondSliderImg);
+        return cy.get(pageLocators.secondSliderImg).invoke('attr', 'src');
     }
     thirdSliderImg() {
-        return cy.get(pageLocators.thirdSliderImg);
+        return cy.get(pageLocators.thirdSliderImg).invoke('attr', 'src');
     }
     clickLeftSliderBtn() {
         return this.leftClickArrow().click();
     }
-    clickrightSliderBtn() {
+    clickRightSliderBtn() {
         return this.rightClickArrow().click();
+    }
+    clickFirstIndicatorOption() {
+        return this.firstIndicatorOption().click();
     }
 }
 

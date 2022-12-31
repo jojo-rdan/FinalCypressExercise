@@ -15,5 +15,6 @@ Feature: Manage Carousel functionalities
         Then I should be able to see the image at the right of the carousel
     
     Scenario: Carousel indicators
-        When I click on any of the indicators
+        When I click on the first indicator
         Then I should see the image that correspond the option
+        And The length of the indicators should be 3
